@@ -14,44 +14,49 @@
   <title>Chef-Form</title>
 </head>
 
-<body>
-  <div class="container lg:px-14 lg:py-14 px-5 py-5 max-w-full overflow-hidden">
-    <h2 class="font-lato md:text-3xl text-xl pb-7 font-semibold">Create New Group</h2>
-    <div class="form-fields md:pt-7 md:pb-12 md:px-10 px-5 pt-5 pb-6 font-lato border gray-border rounded-lg bg-white">
-      <form class=" w-full  ">
+<body class="font-lato bg-bg-color ">
+  <div class="p-1.5 ">
+    <h2 class=" md:text-3xl text-xl pb-7 font-semibold">Create New Group</h2>
+    <div class="form-fields md:pt-7 md:pb-12 md:px-10 px-5 pt-5 pb-6  border gray-border rounded-lg bg-white">
+      <form class=" w-full">
         <div class="outer-flex  gap-8 flex items-stretch justify-center md:flex-row flex-col">
           <div class="inner-left-divs order-2 md:order-1  md:w-3/4 w-full">
             <div class="w-full">
               <label class="block text-base font-normal pb-3" for="">Group Name</label>
               <div class=" w-full">
-                <input class="w-full md:text-base text-xs  border border-gray-border rounded-lg font-normal outline-none  text-[#878787] px-2 py-2" type="text"
-                  placeholder="e.g., weekend Foodies" />
+                <input
+                  class="w-full md:text-base text-xs  border border-gray-border rounded-lg  outline-none  text-[#878787] px-2 py-2"
+                  type="text" placeholder="e.g., weekend Foodies" />
               </div>
             </div>
             <div class="w-full pt-7">
               <label class="block text-base font-normal pb-3" for="">Group Description</label>
               <div class="  w-full">
-                <textarea class="w-full md:text-base text-xs border border-gray-border rounded-lg font-normal outline-none resize-none text-[#878787] px-2 py-2"
+                <textarea
+                  class="w-full md:text-base text-xs border border-gray-border rounded-lg  outline-none resize-none text-[#878787] px-2 py-2"
                   rows="5" cols="35" placeholder="Tell us about your group..."></textarea>
 
               </div>
             </div>
-          </div>
-          <div class="inner-right-divs order-1 md:order-2 bg-gray-200 rounded-lg w-1/4">
-            <div class="inner-img-div  w-full h-full flex items-center justify-center ">
-              <div class="p-4">
-                <img src="./assets/images/Group (1).png" class="w-5  h-5" alt="">
 
-              </div>
+
+
+          </div>
+          <div
+            class="inner-right-divs order-1 md:order-2   bg-gray-200 rounded-lg w-44 md:h-64 lg:w-64 h-40 max-w-full ">
+            <div class="inner-img-div  ">
+
+              <img src="./assets/images/chef.jpg" class="w-44 md:h-64 lg:w-64  rounded-lg" alt="">
+
             </div>
           </div>
         </div>
         <div class="flex flex-col md:flex-row gap-5">
           <div class=" md:w-2/4 w-full ">
-            <label class="block text-base font-normal pt-8" for="">Role</label>
+            <label class="block text-base pb-3  pt-8" for="">Role</label>
             <div class="border border-gray-border rounded-lg w-full">
               <div class="px-4">
-                <select class="w-full pr-10 py-2 text-base font-normal text-[#878787] outline-none">
+                <select class="w-full pr-10 py-2 text-base  text-[#878787] outline-none">
                   <option selected>Select</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -62,10 +67,10 @@
             </div>
           </div>
           <div class=" md:w-2/4  w-full">
-            <label class="block text-base font-normal pt-8" for="">Cuisine Prefrences</label>
+            <label class="block text-base pb-3  pt-8" for="">Cuisine Prefrences</label>
             <div class="border border-gray-border rounded-lg w-full">
               <div class="px-4">
-                <select class="w-full pr-10 py-2 text-base font-normal text-[#878787] outline-none">
+                <select class="w-full pr-10 py-2 text-base  text-[#878787] outline-none">
                   <option selected>Select Cuisine</option>
                   <option value="italian">Italian</option>
                   <option value="chinese">chinese</option>
@@ -76,81 +81,84 @@
             </div>
           </div>
         </div>
-
-        <div class="flex md:flex-row flex-col gap-5">
-          <div class=" md:w-2/4 w-full">
-            <label class="block text-base font-normal pt-8" for="">Meal Type</label>
-            <div class="border border-gray-border rounded-lg w-full">
-              <div class="px-4">
-                <select class="w-full pr-10 py-2 text-base font-normal text-[#878787] outline-none">
-                  <option selected>Select Meal Type</option>
-                  <option value="breakfast">breakfast</option>
-                  <option value="brunch">brunch</option>
-                  <option value="lunch">lunch</option>
-                  <option value="hi-te">hi-tea</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class=" md:w-2/4 w-full">
-            <label class="block text-base font-normal pt-8" for="">Dietery Restrictions</label>
-            <div class="border border-gray-border rounded-lg w-full">
-              <div class="px-4">
-                <select class="w-full pr-10 py-2 text-base font-normal text-[#878787] outline-none">
-                  <option selected>Select Restrictions</option>
-                  <option value="volvo">Gluten-free</option>
-                  <option value="saab">Vegan</option>
-                  <option value="mercedes">Milk allergy</option>
-                  <option value="audi">gluten intolerance</option>
-                </select>
-              </div>
-            </div>
+ <div class="flex md:flex-row flex-col gap-5">
+      <div class=" md:w-2/4 w-full">
+        <label class="block text-base pb-3  pt-8" for="">Meal Type</label>
+        <div class="border border-gray-border rounded-lg w-full">
+          <div class="px-4">
+            <select class="w-full pr-10 py-2 text-base  text-[#878787] outline-none">
+              <option selected>Select Meal Type</option>
+              <option value="breakfast">breakfast</option>
+              <option value="brunch">brunch</option>
+              <option value="lunch">lunch</option>
+              <option value="hi-te">hi-tea</option>
+            </select>
           </div>
         </div>
-        <div class="flex md:flex-row flex-col gap-5 w-full">
-          <div class="md:w-1/3 w-full ">
-            <label class="block text-base font-normal pt-8 pb-3" for="">Maximum Members</label>
-            <div class="border border-gray-border rounded-lg  items-center flex justify-between w-full">
-              <div class="md:px-4 px-2">
-                <input type="number" class="w-full md:pr-4 pr-2 py-2 text-base font-normal text-[#878787]  outline-none"
-                  placeholder="8" />
-              </div>
-              <div class="px-2">
-                <p class="md:text-base text-xs font-normal">Invite members</p>
-              </div>
-            </div>
-          </div>
-          <div class="md:w-1/3 w-full ">
-            <label class="block text-base font-normal pt-8 pb-3" for="">Budget Per Person</label>
-            <div class="border border-gray-border rounded-lg w-full">
-              <div class="px-4">
-                <input type="number" class="w-full  py-2 text-base font-normal text-[#878787] outline-none"
-                  placeholder="$125">
-
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="md:w-1/3 w-full ">
-            <label class="block text-base font-normal pt-8 pb-3" for="">Total Budget</label>
-            <div class="border border-gray-border rounded-lg w-full">
-              <div class="px-4">
-                <input type="number" class="w-full  py-2 text-base font-normal text-[#878787] outline-none"
-                  placeholder="$1,000">
-
-                </select>
-              </div>
-            </div>
+      </div>
+      <div class=" md:w-2/4 w-full">
+        <label class="block text-base  pb-3 pt-8" for="">Dietery Restrictions</label>
+        <div class="border border-gray-border rounded-lg w-full">
+          <div class="px-4">
+            <select class="w-full pr-10 py-2 text-base text-[#878787] outline-none">
+              <option selected>Select Restrictions</option>
+              <option value="volvo">Gluten-free</option>
+              <option value="saab">Vegan</option>
+              <option value="mercedes">Milk allergy</option>
+              <option value="audi">gluten intolerance</option>
+            </select>
           </div>
         </div>
-<div class="flex items-center justify-end pt-8 ">
-            <button class="px-12 py-3 text-white align-middle rounded-lg  text-xl font-semibold bg-[#ffa12e]"> Add Group</button>
-
-</div>
-      </form>
+      </div>
     </div>
+    <div class="flex md:flex-row flex-col gap-5 w-full">
+      <div class="md:w-1/3 w-full ">
+        <label class="block text-base pt-8 pb-3" for="">Maximum Members</label>
+        <div class="border border-gray-border rounded-lg  items-center flex justify-between w-full">
+          <div class="md:px-4 px-2">
+            <input type="number" class="w-full md:pr-4 pr-2 py-2 text-base  text-[#878787]  outline-none"
+              placeholder="8" />
+          </div>
+          <div class="px-2">
+            <p class="md:text-base text-xs ">Invite members</p>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/3 w-full ">
+        <label class="block text-base  pt-8 pb-3" for="">Budget Per Person</label>
+        <div class="border border-gray-border rounded-lg w-full">
+          <div class="px-4">
+            <input type="number" class="w-full  py-2 text-base  text-[#878787] outline-none" placeholder="$125">
+
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:w-1/3 w-full ">
+        <label class="block text-base  pt-8 pb-3" for="">Total Budget</label>
+        <div class="border border-gray-border rounded-lg w-full">
+          <div class="px-4">
+            <input type="number" class="w-full  py-2 text-base  text-[#878787] outline-none" placeholder="$1,000">
+
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-end pt-8 ">
+      <button class="px-12 py-3 text-white align-middle rounded-lg  text-[16px] 3xl:text-xl font-semibold bg-[#ffa12e]">
+        Add Group</button>
+
+    </div>
+
+    </div>
+
+
+   
+    </form>
   </div>
+
 </body>
 
 </html>
