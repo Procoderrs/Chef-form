@@ -1,9 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 
-body{
-  font-family: 'Lato',sans-serif;
+@theme{
+  --color-primary:#ffa12e;
+  --color-border:rgba(135, 135, 135, 0.2);
+  --color-bg:#f6f6f6;
 
-}
+  --font-display:'Lato','sans-serif';
+
+     --breakpoint-coxs:23.45rem;   /* //375px */
+     --breakpoint-xs:   26.56rem;  /* 475px */
+      --breakpoint--sm:  36rem;     /* 576px */
+      --breakpoint-md:   48rem;      /* 768 */
+       --breakpoint-lg:   62rem;      /* 992px */
+       --breakpoint-xl:   75rem;       /* 1200px */
+      --breakpoint-2xl:    90rem;      /* 1440px */
+      --breakpoint-3xl:    103.75rem;   /* 1660px */
+
+
+   
+    }  
