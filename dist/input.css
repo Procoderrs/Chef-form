@@ -7,11 +7,14 @@
   --color-bg:#f6f6f6;
   --color-para-context:#878787;
   --color-secondary:#c41230;
+  --color-meal-options:#ecfdf5;
+  --color-meal-border:#059669;
+  --color-custom-options:#fff8e7;
 
 
   --font-display:'Lato','sans-serif';
 
-  
+  --font-signature:'Stay Positive','cursive';
   --breakpoint-coxs: 23.4375rem;        /* 375px */
   --breakpoint-xs: 26.5625rem;          /* 425px */
   --breakpoint-sm: 36rem;               /* 576px */
@@ -21,3 +24,12 @@
   --breakpoint-2xl: 90rem;              /* 1440px */
   --breakpoint-3xl: 103.75rem;          /* 1660px */   
     }  
+
+
+    @font-face{
+      font-family:'Stay Positive';
+      font-style: normal;
+      font-weight: 400;
+      src: url('./assets/fonts/Stay-Positive.ttf') format('truetype');
+
+    }
