@@ -994,6 +994,11 @@
       padding-left: calc(var(--spacing) * 8);
     }
   }
+  .lg\:pl-12 {
+    @media (width >= 62rem) {
+      padding-left: calc(var(--spacing) * 12);
+    }
+  }
   .lg\:pl-20 {
     @media (width >= 62rem) {
       padding-left: calc(var(--spacing) * 20);
