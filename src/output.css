@@ -1124,6 +1124,11 @@
       height: calc(var(--spacing) * 10);
     }
   }
+  .lg\:h-20 {
+    @media (width >= 62rem) {
+      height: calc(var(--spacing) * 20);
+    }
+  }
   .lg\:h-24 {
     @media (width >= 62rem) {
       height: calc(var(--spacing) * 24);
@@ -1152,6 +1157,11 @@
   .lg\:w-10 {
     @media (width >= 62rem) {
       width: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:w-20 {
+    @media (width >= 62rem) {
+      width: calc(var(--spacing) * 20);
     }
   }
   .lg\:w-24 {
