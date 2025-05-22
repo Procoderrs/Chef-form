@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+		<title>Review Moderation</title>
+	</head>
+	<body class="font-display">
+		<div class="lg:px-6 px-3 py-4">
+			<header class="pb-4 pt-4 lg:pt-0">
+				<div class="flex md:gap-8 gap-3 items-center flex-row justify-center">
+					<div class="flex items-center justify-center flex-col">
+						<img class="2xl:w-20 2xl:h-20 h-12 w-12" src="./assets/images/chef-profile/logo.svg"  alt="" />
+						<div></div>
+					</div>
+					<div class="lg:w-3/3 w-full inner-flex-left-div">
+						<div class="py-4 bg-bg rounded-lg w-full lg:w-[80%]">
+							<div class="relative px-4 bg-bg w-full">
+								<input
+									type="text"
+									placeholder="Search something with your interest..."
+									class="md:pl-12 pl-4 md:pr-4 w-full rounded-md outline-none text-xs md:text-base 2xl:text-lg"
+								/>
+								<img
+									src="./assets/images/chef-profile/Vector.png"
+									alt="Search"
+									class="lg:w-8 lg:h-8 w-4 h-4 absolute lg:left-6 left-3 top-1/2 transform -translate-y-1/2"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="inner-flex-right-div">
+						<div class="flex gap-3 items-center justify-center">
+							<div class="2xl:w-8 w-6 h-6 relative  2xl:h-8">
+								<img
+									class="w-full h-full"
+									src="./assets/images/chef-profile/notify.svg"
+									alt="cart"
+								/>
+								<p
+									class="absolute bg-secondary flex items-center justify-center w-4 h-4 text-center text-white text-sm rounded-full left-5 top-[-8px]"
+								>
+									4
+								</p>
+							</div>
+							<div class="w-8 h-8 rounded-full">
+								<img
+									class="w-full h-full"
+									src="./assets/images/chef-profile/Rectangle 159.png"
+									alt="group"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="lg:pl-28">
+				<main class="bg-bg lg:px-8 px-4 lg:py-14 py-7">
+					<section class="">
+						<div class="max-w-full container">
+							<!-- Outer banner with background -->
+							<div
+								class="outer-div relative h-full bg-[url('./assets/images/Admin-screen-ReviewModeration/top-banner-2.png')] bg-cover rounded-lg"
+							>
+								<div
+									class="absolute inset-0 rounded-lg bg-[#000000] top-0 left-0 w-full h-full opacity-70 z-0"
+								></div>
+								<!-- Inner centered content -->
+								<div
+									class="relative 2xl:px-12 py-14 flex items-center justify-center rounded-lg z-10"
+								>
+									<div
+										class="w-full 2xl:px-12 md:px-8 py-10 md:py-0 flex flex-col md:flex-row text-center md:text-start items-center justify-between gap-6"
+									>
+										<div class="max-w-full">
+											<h1
+												class="text-white font-bold  text-2xl lg:text-4xl 2xl:text-[50px]"
+											>
+												Review Moderation
+											</h1>
+											<p
+												class="text-white text-xs pt-2 lg:text-base 2xl:text-xl"
+											>
+												Manage and moderate user reviews
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="all-reviews">
+						<div class="flex items-center pt-16 pb-7 gap-6 justify-between">
+							<h2 class="lg:text-3xl text-xl  font-semibold">All Reviews</h2>
+                 <div class="lg:hidden">
+                   <img src="./assets/images/Admin-screen-ReviewModeration/filter.png" class="w-6 h-7" alt="">
+
+                 </div>
+              <div class="  lg:flex  hidden flex-row items-center justify-center gap-2.5">
+								<div class="px-4 bg-white rounded-lg">
+									<select
+										class="text-[#878787] rounded-lg lg:pr-6 py-2 outline-none"
+									>
+										<option selected>All Status</option>
+										<option value="Available">Available</option>
+										<option value="Busy">Busy</option>
+										<option value="Disturb">Disturb</option>
+										<option value="Be Right Back">Be Right Back</option>
+										<option value="Away">Away</option>
+										<option value="offline">offline</option>
+									</select>
+								</div>
+								<div class="px-4 bg-white rounded-lg">
+									<select
+										class="text-[#878787] rounded-lg lg:pr-6 py-2 outline-none"
+									>
+										<option selected>Sort by: Latest</option>
+										<option value="Available">Available</option>
+										<option value="Busy">Busy</option>
+										<option value="Disturb">Disturb</option>
+										<option value="Be Right Back">Be Right Back</option>
+										<option value="Away">Away</option>
+										<option value="offline">offline</option>
+									</select>
+								</div>
+								<div class="px-4 py-2 w-full bg-white rounded-lg">
+									<input
+										type="text"
+										placeholder="Search Review..."
+										class="outline-none"
+									/>
+								</div>
+							</div>
+						</div>
+
+            <div class="flex flex-col gap-12">
+
+            
+						<div class="user-name bg-white rounded-lg pt-7 pb-10  px-4">
+							<div
+								class="top-flex-user-details flex items-center  justify-between"
+							>
+								<div class="flex gap-3">
+									<div class="w-10 h-10">
+										<img
+											class="w-full h-full"
+											src="./assets/images/chef-profile/Rectangle 159.png"
+											alt=""
+										/>
+									</div>
+									<div class="user-details">
+										<p class="lg:text-lg text-xs">User Name</p>
+										<p class="lg:text-base text-xs">email123@gmail.com</p>
+									</div>
+								</div>
+								<div class="rating-details flex lg:gap-3 gap-1 items-center flex-nowrap">
+									<div class="lg:w-6 lg:h-6 h-3 w-3">
+										<img
+											class="w-full h-full"
+											src="./assets/images/chef-profile/Star 5.png "
+											alt=""
+										/>
+									</div>
+               <p class="text-primary font-semibold lg:text-xl text-xs ">4.5</p>
+                </div>
+							</div>
+
+              <p class="lg:text-xl  text-xs text-center lg:text-start text-para-context pt-5">I had an amazing experience with the chef’s service! The meals were flavorful,
+                 freshly prepared, and beautifully presented. 
+                Communication was smooth throughout, and the chef was very accommodating to our dietary 
+                preferences. Everything arrived on time and was packed with care. This service made our 
+                dinner gathering so much easier and more enjoyable. Highly recommended!</p>
+						   <div class="review-flex flex items-center justify-center flex-col md:flex-row gap-3 md:justify-between pt-5">
+                 <div class="rounded-2xl text-primary  bg-custom-options border border-primary">
+                  <p class="px-4 py-1 font-semibold lg:text-base text-sm ">Pending Review</p>
+                 </div>
+                 <div class="flex  lg:pt-0 gap-3">
+                    <div class=" text-white bg-primary rounded-2xl">
+                      <p class="px-4 py-1 font-semibold lg:text-base text-sm">Approve</p>
+                    </div>
+                    <div class=" text-secondary border border-secondary rounded-2xl">
+                     <p class="px-4 py-1 font-semibold lg:text-base text-sm">Reject</p>
+                    </div>
+                 </div>
+               </div>
+              </div>
+              <div class="user-name bg-white rounded-lg pt-7 pb-10  px-4">
+							<div
+								class="top-flex-user-details flex items-center  justify-between"
+							>
+								<div class="flex gap-3">
+									<div class="w-10 h-10">
+										<img
+											class="w-full h-full"
+											src="./assets/images/chef-profile/Rectangle 159.png"
+											alt=""
+										/>
+									</div>
+									<div class="user-details">
+										<p class="lg:text-lg text-xs">User Name</p>
+										<p class="lg:text-base text-xs">email123@gmail.com</p>
+									</div>
+								</div>
+								<div class="rating-details flex lg:gap-3 gap-1 items-center flex-nowrap">
+									<div class="lg:w-6 lg:h-6 h-3 w-3">
+										<img
+											class="w-full h-full"
+											src="./assets/images/chef-profile/Star 5.png "
+											alt=""
+										/>
+									</div>
+               <p class="text-primary font-semibold lg:text-xl text-xs ">4.5</p>
+                </div>
+							</div>
+
+              <p class="lg:text-xl  text-xs text-center lg:text-start text-para-context pt-5">I had an amazing experience with the chef’s service! The meals were flavorful,
+                 freshly prepared, and beautifully presented. 
+                Communication was smooth throughout, and the chef was very accommodating to our dietary 
+                preferences. Everything arrived on time and was packed with care. This service made our 
+                dinner gathering so much easier and more enjoyable. Highly recommended!</p>
+						   <div class="review-flex flex items-center justify-center flex-col md:flex-row gap-3 md:justify-between pt-5">
+                 <div class="rounded-2xl text-white  bg-meal-border ">
+                  <p class="px-4 py-1 font-semibold lg:text-base text-sm ">Approved</p>
+                 </div>
+                 
+               </div>
+              </div>
+             <div class="user-name bg-white rounded-lg pt-7 pb-10  px-4">
+							<div
+								class="top-flex-user-details flex items-center  justify-between"
+							>
+								<div class="flex gap-3">
+									<div class="w-10 h-10">
+										<img
+											class="w-full h-full"
+											src="./assets/images/chef-profile/Rectangle 159.png"
+											alt=""
+										/>
+									</div>
+									<div class="user-details">
+										<p class="lg:text-lg text-xs">User Name</p>
+										<p class="lg:text-base text-xs">email123@gmail.com</p>
+									</div>
+								</div>
+								<div class="rating-details flex lg:gap-3 gap-1 items-center flex-nowrap">
+									<div class="lg:w-6 lg:h-6 h-3 w-3">
+										<img
+											class="w-full h-full"
+											src="./assets/images/chef-profile/Star 5.png "
+											alt=""
+										/>
+									</div>
+               <p class="text-primary font-semibold lg:text-xl text-xs ">2.5</p>
+                </div>
+							</div>
+
+              <p class="lg:text-xl  text-xs text-center lg:text-start text-para-context pt-5">I had an amazing experience with the chef’s service! The meals were flavorful,
+                 freshly prepared, and beautifully presented. 
+                Communication was smooth throughout, and the chef was very accommodating to our dietary 
+                preferences. Everything arrived on time and was packed with care. This service made our 
+                dinner gathering so much easier and more enjoyable. Highly recommended!</p>
+						   <div class="review-flex flex items-center justify-center flex-col md:flex-row gap-3 md:justify-between pt-5">
+                 <div class=" text-white bg-secondary border  border-secondary rounded-2xl">
+                     <p class="px-4 py-1 font-semibold lg:text-base text-sm">Rejected</p>
+                    </div>
+                 
+               </div>
+              </div>
+              </div>
+					</section>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>
