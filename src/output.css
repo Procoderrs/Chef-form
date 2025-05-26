@@ -1493,6 +1493,11 @@
       height: calc(var(--spacing) * 8);
     }
   }
+  .\32 xl\:h-12 {
+    @media (width >= 90rem) {
+      height: calc(var(--spacing) * 12);
+    }
+  }
   .\32 xl\:h-14 {
     @media (width >= 90rem) {
       height: calc(var(--spacing) * 14);
@@ -1564,6 +1569,11 @@
       height: calc(var(--spacing) * 10);
     }
   }
+  .\33 xl\:h-12 {
+    @media (width >= 103.75rem) {
+      height: calc(var(--spacing) * 12);
+    }
+  }
   .\33 xl\:h-14 {
     @media (width >= 103.75rem) {
       height: calc(var(--spacing) * 14);
@@ -1572,6 +1582,11 @@
   .\33 xl\:w-10 {
     @media (width >= 103.75rem) {
       width: calc(var(--spacing) * 10);
+    }
+  }
+  .\33 xl\:w-12 {
+    @media (width >= 103.75rem) {
+      width: calc(var(--spacing) * 12);
     }
   }
   .\33 xl\:w-14 {
