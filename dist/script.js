@@ -7,8 +7,8 @@
 							datasets: [{
 								label: 'Sales',
 								data: [5000, 4600, 3800, 5400, 600, 4000, 5000],  // your data
-								backgroundColor: 'rgba(99, 102, 241, 0.7)',
-								borderColor: 'rgba(99, 102, 241, 1)',
+								backgroundColor: 'rgba(255, 161, 46, 1)',
+								borderColor: 'rgba(255, 161, 46, 1)',
 								borderWidth: 1
 							}]
 						},
@@ -41,7 +41,7 @@
 								label: 'Visitors',
 								data: [30, 10, 60, 50, 60, 90, 100, 120],
 								fill: false,
-								borderColor: 'rgba(236, 72, 153, 1)', // pink-500
+								borderColor: 'rgba(196, 18, 48, 1)', // pink-500
 
 							}]
 						},
