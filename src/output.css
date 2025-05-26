@@ -1159,6 +1159,11 @@
       padding-left: calc(var(--spacing) * 12);
     }
   }
+  .md\:pl-32 {
+    @media (width >= 48rem) {
+      padding-left: calc(var(--spacing) * 32);
+    }
+  }
   .md\:pl-36 {
     @media (width >= 48rem) {
       padding-left: calc(var(--spacing) * 36);
