@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="output.css" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+	<title>Booking Analytics</title>
+</head>
+
+<body class="font-display ">
+	<main class="   pb-20   bg-bg">
+		<section class="">
+			<div class="max-w-full container">
+				<!-- Outer banner with background -->
+				<div
+					class="outer-div relative h-full bg-[url('./assets/images/Admin-screen-ReviewModeration/top-banner-2.png')] bg-cover rounded-lg">
+					<div class="absolute inset-0 rounded-lg bg-[#000000] top-0 left-0 w-full h-full opacity-60 z-0"></div>
+					<!-- Inner centered content -->
+					<div class="relative 2xl:px-12 py-14 flex items-center justify-center rounded-lg z-10">
+						<div
+							class="w-full 2xl:px-12 md:px-8 py-10 md:py-0 flex flex-col md:flex-row text-center md:text-start items-center justify-between gap-6">
+							<div class="max-w-full">
+								<h1 class="text-white font-bold  text-2xl lg:text-4xl 2xl:text-[50px]">
+									Booking Analytics
+								</h1>
+								<p class="text-white text-xs pt-2 lg:text-base 2xl:text-xl">
+									Overview of your booking performance
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<div class="md:px-12 ">
+
+		
+		<section class="flex lg:flex-row flex-col  items-center justify-center pt-24 pb-14  gap-12">
+			<div class="total-bookings flex-col w-full pt-6 pb-6 flex  justify-between bg-white rounded-lg  px-3">
+				<p class=" 2xl:text-xl text-para-context text-base font-semibold">Total Bookings</p>
+				<div class="flex justify-between pt-6">
+					<p class="2xl:text-6xl  text-4xl font-semibold">1250</p>
+					<img class="2xl:w-14 2xl:h-14 h-7 w-8" src="./assets/images/booking-analytics/calender.svg" alt="">
+				</div>
+				<div class="flex gap-2 pt-6">
+					<img class="h-5 w-5 " src="./assets/images/booking-analytics/Group.svg" alt="">
+					<p class="text-meal-border">12.5 from last month</p>
+				</div>
+			</div>
+			<div class="total-bookings flex-col w-full pt-6 pb-6 flex  justify-between bg-white rounded-lg  px-3">
+				<p class=" 2xl:text-xl text-para-context text-base font-semibold">New Bookings</p>
+				<div class="flex justify-between pt-6">
+					<p class="2xl:text-6xl  text-4xl font-semibold">250</p>
+					<img class="2xl:w-14 2xl:h-14 h-7 w-8" src="./assets/images/booking-analytics/calender.svg" alt="">
+				</div>
+				<div class="flex gap-2 pt-6">
+					<img class="h-5 w-5" src="./assets/images/booking-analytics/Group.svg" alt="">
+					<p class="text-meal-border">12.5 from last month</p>
+				</div>
+			</div>
+			<div class="total-bookings flex-col w-full pt-6 pb-6 flex  justify-between bg-white rounded-lg  px-3">
+				<p class=" 2xl:text-xl text-para-context text-base font-semibold">Avg. Booking Value</p>
+				<div class="flex justify-between pt-6">
+					<p class="2xl:text-6xl  text-4xl font-semibold">$150</p>
+					<img class="2xl:w-14 2xl:h-14 h-7 w-8" src="./assets/images/booking-analytics/money.svg" alt="">
+				</div>
+				<div class="flex gap-2 pt-6">
+					<img class="h-5 w-5" src="./assets/images/booking-analytics/Group (1).svg" alt="Analytics">
+					<p class="text-secondary">12.5 from last month</p>
+				</div>
+			</div>
+			<div class="total-bookings flex-col w-full pt-6 pb-6 flex  justify-between bg-white rounded-lg  px-3">
+				<p class=" 2xl:text-xl text-para-context text-base font-semibold">total Revenue</p>
+				<div class="flex justify-between pt-6">
+					<p class="2xl:text-6xl  text-4xl font-semibold">$150</p>
+					<img class="2xl:w-14 2xl:h-14 h-7 w-8" src="./assets/images/booking-analytics/money.svg" alt="">
+				</div>
+				<div class="flex gap-2 pt-6">
+					<img class="h-5 w-5" src="./assets/images/booking-analytics/Group (1).svg" alt="">
+					<p class="text-secondary">12.5 from last month</p>
+				</div>
+			</div>
+		</section>
+
+
+
+		<div class="bg-bg">
+
+			<div class=" ">
+
+				<div class="w-full lg:flex-row flex-col flex items-start justify-center gap-12   rounded-lg shadow-lg">
+
+					<!-- Line Chart -->
+					<div class=" lg:w-1/2 w-full px-5 py-5 bg-white rounded-lg">
+						<div class="flex items-center justify-between mb-4">
+							<h2 class="lg:text-2xl text-base font-bold">Booking Trends</h2>
+							<div class="border border-secondary text-secondary bg-white rounded-lg py-1 px-1">
+								<select name="days" class="outline-none" id="days">
+									<option value="Last 7 Days">Last 7 Days</option>
+									<option value="Last 14 Days">Last 14 Days</option>
+									<option value="Last 21 Days">Last 21 Days</option>
+									<option value="Last 1 month">Last 1 month </option>
+								</select>
+							</div>
+						</div>
+						<canvas id="lineChart" class="w-full h-64"></canvas>
+					</div>
+
+					<!-- Bar Chart -->
+					<div class=" lg:w-1/2  w-full bg-white px-5 py-5 rounded-lg">
+						<div class="flex items-center justify-between mb-4">
+							<h2 class="g:text-2xl text-base  font-bold">Revenue Analytics</h2>
+							<div class="border border-secondary  text-secondary bg-white rounded-lg py-1 px-1">
+								<select name="days" class="outline-none" id="days">
+									<option value="Last 7 Days">Last 7 Days</option>
+									<option value="Last 14 Days">Last 14 Days</option>
+									<option value="Last 21 Days">Last 21 Days</option>
+									<option value="Last 1 month">Last 1 month </option>
+								</select>
+							</div>
+						</div>
+						<canvas id="barChart" class="w-full h-64"></canvas>
+					</div>
+
+				</div>
+
+
+				
+			</div>
+
+		</div>
+
+
+		<section>
+			<div class="flex items-center justify-between pt-14 pb-7">
+				<p class="text-2xl font-semibold ">Recent Bookings</p>
+			</div>
+
+
+
+			<div class="  bg-white rounded-lg pb-5">
+				
+
+<div class="flex border border-border rounded-lg   flex-col">
+  <div class="">
+    <div class=" ">
+      <div class="overflow-hidden">
+        <table
+          class="table-auto  w-full text-left   ">
+          <thead
+            class="border-b text-xs xl:text-lg  xl:font-bold    border-border ">
+            <tr class="px-1  ">
+              <th scope="col" class="    lg:w-1/4   xs:px-4 py-4">Customer</th>
+              <th scope="col" class="    lg:w-1/4 xs:px-4 py-4">Booking Date</th>
+              <th scope="col" class="   lg:w-1/4  xs:px-4 py-4">Amount</th>
+              <th scope="col" class="   lg:w-1/4xs:px-4 py-4">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-border">
+              <td class="whitespace-nowrap lg:px-6 xs:px-4  py-4 font-medium">
+								<div class="flex md:px-2    md:gap-2">
+									<img class="hidden md:block" src="./assets/images/Admin-screen-ReviewModeration/Rectangle 159.png" alt="Customer">
+									<div class="flex flex-col  text-xs">
+                      <p class="lg:text-lg text-xs">User Name</p>
+											<p class=" pt-1 lg:text-base ">email123@gmail.com</p>
+									</div>
+								</div>
+							</td>
+              <td class="whitespace-nowrap px-2 py-4 lg:text-lg text-xs">April 24,2025</td>
+              <td class="whitespace-nowrap px-2 py-4 lg:text-lg text-xs">$250.00</td>
+              <td class="whitespace-nowrap  text-nowrap   py-4"><span class="bg-[#ECFDF5]  xs:px-3 py-2 rounded-lg text-xs lg:text-base font-semibold text-meal-border">Confirmed</span></td>
+            </tr>
+            <tr class="border-b border-border">
+              <td class="whitespace-nowrap lg:px-6 xs:px-4  py-4 font-medium">
+								<div class="flex md:px-2 md:gap-2">
+									<img class="hidden md:block" src="./assets/images/Admin-screen-ReviewModeration/Rectangle 159.png" alt="Customer">
+									<div class="flex flex-col  ">
+                      <p class="lg:text-lg  text-xs">User Name</p>
+											<p class="pt-1 text-xs lg:text-base ">email123@gmail.com</p>
+									</div>
+								</div>
+							</td>
+              <td class="whitespace-nowrap px-2 py-4 lg:text-lg text-xs">April 24,2025</td>
+              <td class="whitespace-nowrap px-2 py-4  lg:text-lg text-xs">$250.00</td>
+              <td class="whitespace-nowrap text-xs "><span class="bg-[#fff8e7] text-primary lg:text-base font-semibold py-2 xs:px-3 rounded-lg px-2">Pending</span></td>
+            </tr>
+           <tr class="border-b border-neutral-200 dark:border-white/10">
+              <td class="whitespace-nowrap lg:px-6 xs:px-4  py-4 font-medium">
+								<div class="flex md:px-2 md:gap-2">
+									<img class="hidden md:block" src="./assets/images/Admin-screen-ReviewModeration/Rectangle 159.png" alt="Customer">
+									<div class="flex flex-col ">
+                      <p class="lg:text-lg  text-xs">User Name</p>
+											<p class="pt-1 lg:text-base  text-xs">email123@gmail.com</p>
+									</div>
+								</div>
+							</td>
+              <td class="whitespace-nowrap  lg:text-lg px-2 py-4 text-xs">April 24,2025</td>
+              <td class="whitespace-nowrap lg:text-lg px-2 py-4 text-xs">$250.00</td>
+              <td class="whitespace-nowrap   text-xs "><span class="bg-[#ecfdf5] text-meal-border xs:px-3 py-2 text-xs lg:text-base font-semibold rounded-lg">Confirmed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+			</div>
+
+
+
+
+
+
+		</section>
+</div>
+
+	</main>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
