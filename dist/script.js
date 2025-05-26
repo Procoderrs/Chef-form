@@ -9,7 +9,9 @@
 								data: [5000, 4600, 3800, 5400, 600, 4000, 5000],  // your data
 								backgroundColor: 'rgba(255, 161, 46, 1)',
 								borderColor: 'rgba(255, 161, 46, 1)',
-								borderWidth: 1
+								borderWidth: 1,
+								
+								barThickness:20,
 							}]
 						},
 						options: {
