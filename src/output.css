@@ -1033,6 +1033,11 @@
       padding-block: calc(var(--spacing) * 0);
     }
   }
+  .md\:py-7 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 7);
+    }
+  }
   .md\:py-12 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 12);
@@ -1424,6 +1429,12 @@
   .\32 xl\:px-12 {
     @media (width >= 90rem) {
       padding-inline: calc(var(--spacing) * 12);
+    }
+  }
+  .\32 xl\:text-2xl {
+    @media (width >= 90rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
   .\32 xl\:text-3xl {
