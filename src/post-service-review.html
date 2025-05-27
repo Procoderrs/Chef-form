@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <title>Post-Service-Review</title>
+</head>
+<body class="font-display">
+
+  <section class="bg-bg md:pl-14 px-3">
+    <div class="">
+<div class="pt-10">
+      <h2 class="3xl:text-3xl font-semibold md:text-xl text-lg pb-7">Post Service Review</h2>
+      <div class=" bg-white  pt-9  pb-9 border border-border md:px-7 px-3 rounded-lg ">
+<div class="flex flex-col ">
+  <p class="3xl:text-xl text-base">Star Rating</p>
+    <div class="flex gap-3 pt-3.5">
+      <div class="3xl:w-10 3xl:h-10 w-5 h-5">
+        <img src="./assets/images/post-service-review/Star 5.svg" alt="Rate-us">
+      </div>
+      <div class="3xl:w-10 3xl:h-10 w-5 h-5">
+        <img src="./assets/images/post-service-review/Star 5.svg" alt="Rate-us">
+      </div>
+      <div class="3xl:w-10 3xl:h-10 w-5 h-5">
+        <img src="./assets/images/post-service-review/Star 5.svg" alt="Rate-us">
+      </div>
+      <div class="3xl:w-10 3xl:h-10 w-5 h-5">
+        <img src="./assets/images/post-service-review/Star 5.svg" alt="Rate-us">
+      </div>
+      <div class="3xl:w-10 3xl:h-10 w-5 h-5">
+        <img src="./assets/images/post-service-review/Star 5.svg" alt="Rate-us">
+      </div>
+    </div>
+</div>
+<div class="pb-14">
+  <p class="3xl:text-xl text-base pb-3.5  pt-9 ">Add Tags</p>
+<div class="py-3.5  border md:px-3 px-2 rounded-lg border-border">
+<div class="flex flex-wrap md:gap-4 gap-4">
+<div class="flex items-center border border-secondary rounded-lg gap-2 bg-[#fff8e7] md:px-3 px-1 py-1 ">
+ <p class="text-secondary 3xl:text-xl md:text-base text-sm ">Authentic taste</p>
+<div class="w-3.5 h-3.5">
+   <img  src="./assets/images/post-service-review/Group 289.svg" alt="Remove-tags">
+
+</div>
+</div>
+<div class="flex items-center border border-secondary rounded-lg gap-2 bg-[#fff8e7] md:px-3 px-1 py-1 ">
+ <p class="text-secondary  3xl:text-xl md:text-base text-sm">Very Tasty</p>
+<div class="w-3.5 h-3.5">
+   <img  src="./assets/images/post-service-review/Group 289.svg" alt="Remove-tags">
+
+</div>
+</div>
+<div class="flex items-center border border-secondary rounded-lg gap-2 bg-[#fff8e7] md:px-3 px-1 py-1 ">
+ <p class="text-secondary 3xl:text-xl md:text-base text-sm">Good Value</p>
+<div class="w-3.5 h-3.5">
+   <img  src="./assets/images/post-service-review/Group 289.svg" alt="Remove-tags">
+
+</div>
+</div>
+<div class="flex items-center border border-secondary rounded-lg gap-2 bg-[#fff8e7] md:px-3 px-1 py-1 ">
+ <p class="text-secondary 3xl:text-xl md:text-base text-sm">Amazing Meal</p>
+<div class="w-3.5 h-3.5">
+   <img  src="./assets/images/post-service-review/Group 289.svg" alt="Remove-tags">
+
+</div>
+</div>
+<div class="flex items-center border border-secondary rounded-lg gap-2 bg-[#fff8e7] px-3 py-1">
+ <p class="text-secondary 3xl:text-xl md:text-base text-sm">Authentic taste</p>
+<div class="w-3.5 h-3.5">
+   <img  src="./assets/images/post-service-review/Group 289.svg" alt="Remove-tags">
+
+</div>
+</div>
+</div>
+  
+
+</div>
+</div>
+<div class="pb-18">
+  <p class="pb-3.5 3xl:text-xl md:text-lg text-base">Written Feedback (optional)</p>
+  <div class="border border-border pt-4 px-3 rounded-lg">
+   <form >
+     <textarea
+      name=""
+      id="Feedback"
+      class="w-full resize-none md:text-base text-sm text-para-context"
+      rows="4"
+      cols="50"
+      placeholder="Share more about your experience"></textarea>
+   </form>
+  </div>
+</div>
+
+
+<div class="pb-8">
+  <p class="pb-3.5 3xl:text-xl md:text-lg text-base">Upload Photo</p>
+  <div class="border-3 border-dashed border-border pt-4 rounded-lg">
+    <form method="post" ">
+      <label for="photo-upload" class="flex flex-col md:py-7 py-2 items-center justify-center cursor-pointer">
+        <div class="p-2">
+          <img src="./assets/images/post-service-review/material-symbols_upload-rounded.svg" alt="image-uploader">
+        </div>
+        <p class="pt-2.5 pb-7 md:text-base text-sm text-para-context">
+          Upload or Drag & Drop Photo
+        </p>
+        <input type="file" id="photo-upload" name="photo" accept="image/*" class="hidden" />
+      </label>
+    </form>
+  </div>
+</div>
+
+
+   <button type="submit" class="w-full py-3 rounded-lg 3xl:text-xl md:text-lg text-sm font-semibold bg-primary text-white">
+     Submit Review
+   </button>
+      </div>
+    </div>
+    </div>
+
+
+  </section>
+  
+</body>
+</html>
