@@ -311,6 +311,9 @@
   .table {
     display: table;
   }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -1389,6 +1392,11 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .\32 xl\:h-3\.5 {
+    @media (width >= 90rem) {
+      height: calc(var(--spacing) * 3.5);
+    }
+  }
   .\32 xl\:h-8 {
     @media (width >= 90rem) {
       height: calc(var(--spacing) * 8);
@@ -1397,6 +1405,11 @@
   .\32 xl\:h-14 {
     @media (width >= 90rem) {
       height: calc(var(--spacing) * 14);
+    }
+  }
+  .\32 xl\:w-3\.5 {
+    @media (width >= 90rem) {
+      width: calc(var(--spacing) * 3.5);
     }
   }
   .\32 xl\:w-8 {
@@ -1443,6 +1456,11 @@
       font-size: 50px;
     }
   }
+  .\33 xl\:h-3\.5 {
+    @media (width >= 103.75rem) {
+      height: calc(var(--spacing) * 3.5);
+    }
+  }
   .\33 xl\:h-10 {
     @media (width >= 103.75rem) {
       height: calc(var(--spacing) * 10);
@@ -1451,6 +1469,11 @@
   .\33 xl\:h-14 {
     @media (width >= 103.75rem) {
       height: calc(var(--spacing) * 14);
+    }
+  }
+  .\33 xl\:w-3\.5 {
+    @media (width >= 103.75rem) {
+      width: calc(var(--spacing) * 3.5);
     }
   }
   .\33 xl\:w-10 {
