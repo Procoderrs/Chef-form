@@ -1531,6 +1531,14 @@
       font-size: 50px;
     }
   }
+  .\33 xl\:xl\:text-xl {
+    @media (width >= 103.75rem) {
+      @media (width >= 75rem) {
+        font-size: var(--text-xl);
+        line-height: var(--tw-leading, var(--text-xl--line-height));
+      }
+    }
+  }
 }
 @font-face {
   font-family: 'Stay Positive';
