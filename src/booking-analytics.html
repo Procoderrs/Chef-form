@@ -152,122 +152,141 @@
 
 			<div class="bg-white rounded-lg border border-border ">
   <div class=" 3xl:pb-14 pb-6 lg:px-7">
-    <ul>
-      <!-- Header Row -->
-     <li class="hidden md:block">
-        <div class="flex  items-center xs:justify-between gap-10 px-8 border-b border-border md:py-7 md:px-7">
-          
-					<div><p class=" md:pl-8 3xl:text-lg md:text-base text-xs font-bold">Customer</p></div>
-          <div class="md:pl-28 3xl:text-lg md:text-base text-xs font-bold"><p>Booking Date</p></div>
-          <div class="md:pr-10 3xl:text-lg  md:text-base text-xs font-bold"><p>Amount</p></div>
-          <div><p class="pr-12 3xl:text-lg   md:text-base text-xs font-bold">Status</p></div>
+   <div class="hidden md:block overflow-x-auto">
+      <table class="w-full text-left  border-collapse ">
+        <thead>
+          <tr class="text-xs md:text-base 3xl:text-lg font-bold border-b border-border">
+            <th class="pl-7 w-[40%] py-6">Customer</th>
+            <th class="py-6 w-[30%]">Booking Date</th>
+            <th class="py-6 w-[30%]">Amount</th>
+            <th class="py-6 ">Status</th>
+          </tr>
+        </thead>
+        <tbody class="text-sm 3xl:text-lg">
+          <!-- Row 1 -->
+          <tr class="border-b border-border">
+            <td class="flex items-center  gap-3 py-6 pl-7">
+              <img class="w-10 h-10 rounded-full" src="./assets/images/Admin-screen-ReviewModeration/Rectangle 159.png" alt="">
+              <div class="flex flex-col">
+                <p class="font-medium">User Name</p>
+                <p class="text-xs text-gray-500">email123@example.com</p>
+              </div>
+            </td>
+            <td>April 24, 2025</td>
+            <td>$250.00</td>
+            <td class="pr-7">
+              <span class="text-meal-border font-semibold px-4 py-2 rounded-lg bg-[#ecfdf5]">Confirmed</span>
+            </td>
+          </tr>
+
+          <!-- Row 2 -->
+          <tr class="border-b border-border">
+            <td class="flex items-center gap-3 py-6 pl-7">
+              <img class="w-10 h-10 rounded-full" src="./assets/images/Admin-screen-ReviewModeration/Rectangle 159.png" alt="">
+              <div class="flex flex-col">
+                <p class="font-medium">User Name</p>
+                <p class="text-xs text-gray-500">email123@example.com</p>
+              </div>
+            </td>
+            <td>April 24, 2025</td>
+            <td>$250.00</td>
+            <td class="pr-7">
+              <span class="text-primary font-semibold px-6 py-2 rounded-lg bg-[#fff8e7]">Pending</span>
+            </td>
+          </tr>
+
+          <!-- Row 3 -->
+          <tr>
+            <td class="flex items-center gap-3 py-6 pl-7">
+              <img class="w-10 h-10 rounded-full" src="./assets/images/Admin-screen-ReviewModeration/Rectangle 159.png" alt="">
+              <div class="flex flex-col">
+                <p class="font-medium">User Name</p>
+                <p class="text-xs text-gray-500">email123@example.com</p>
+              </div>
+            </td>
+            <td>April 24, 2025</td>
+            <td>$250.00</td>
+            <td class="pr-7">
+              <span class="text-meal-border font-semibold px-4 py-2 rounded-lg bg-[#ecfdf5]">Confirmed</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+		<!-- Mobile Layout (below md) -->
+    <div class="md:hidden space-y-4">
+      <!-- Card Row -->
+      <div class="flex flex-col gap-4 border border-border rounded-lg bg-white p-4">
+        <div class="flex items-center gap-3">
+          <img class="w-10 h-10 rounded-full" src="./assets/images/Admin-screen-ReviewModeration/Rectangle 159.png" alt="">
+          <div class="flex flex-col">
+            <p class="text-sm font-medium">User Name</p>
+            <p class="text-xs text-gray-500">email123@example.com</p>
+          </div>
         </div>
-      </li>
-
-      
-     <!-- Data Row - Mobile Card Style -->
-<li>
-  <div class="flex flex-col gap-4 border-b border-border rounded-lg  bg-white p-4 m-2 md:flex-row md:items-center md:justify-between md:gap-10 md:p-7 md:rounded-none md:shadow-none md:border-b">
-    
-    <!-- Customer Info -->
-    <div class="flex items-center gap-3 w-full md:w-auto">
-      <img class="w-10 h-10 rounded-full" src="./assets/images/Admin-screen-ReviewModeration/Rectangle 159.png" alt="">
-      <div class="flex flex-col">
-        <p class=" 3xl:text-lg text-sm font-medium">User Name</p>
-        <p class="text-xs text-gray-500">email123@example.com</p>
+        <div class="flex justify-between text-sm text-gray-700">
+          <span class="font-semibold">Booking Date:</span>
+          <span>April 24, 2025</span>
+        </div>
+        <div class="flex justify-between text-sm text-gray-700">
+          <span class="font-semibold">Amount:</span>
+          <span>$250.00</span>
+        </div>
+        <div class="flex justify-between items-center text-sm font-semibold">
+          <span class="text-gray-700">Status:</span>
+          <span class="text-meal-border px-4 py-2 rounded-lg bg-[#ecfdf5]">Confirmed</span>
+        </div>
       </div>
-    </div>
 
-    <!-- Booking Date -->
-    <div class="flex justify-between w-full md:w-auto text-sm text-gray-700">
-      <span class="font-semibold md:hidden">Booking Date:</span>
-      <span class="3xl:text-lg">April 24, 2025</span>
-    </div>
-
-    <!-- Amount -->
-    <div class="flex justify-between w-full md:w-auto text-sm text-gray-700">
-      <span class="font-semibold md:hidden">Amount:</span>
-      <span class="3xl:text-lg">$250.00</span>
-    </div>
-
-    <!-- Status -->
-    <div class="flex justify-between items-center w-full md:w-auto text-sm font-semibold">
-      <span class="text-gray-700 md:hidden">Status:</span>
-      <span class="text-meal-border font-semibold px-4 py-2 rounded-lg bg-[#ecfdf5]">Confirmed</span>
-    </div>
-
-  </div>
-</li>
-
-
-      <!-- Repeat for other rows -->
-     <li>
-  <div class="flex flex-col gap-4 border-b border-border rounded-lg shadow-sm bg-white p-4 m-2 md:flex-row md:items-center md:justify-between md:gap-10 md:p-7 md:rounded-none md:shadow-none md:border-b">
-    
-    <!-- Customer Info -->
-    <div class="flex items-center gap-3 w-full md:w-auto">
-      <img class="w-10 h-10 rounded-full" src="./assets/images/Admin-screen-ReviewModeration/Rectangle 159.png" alt="">
-      <div class="flex flex-col">
-        <p class="text-sm 3xl:text-lg font-medium">User Name</p>
-        <p class="text-xs text-gray-500">email123@example.com</p>
+			<div class="flex flex-col gap-4 border border-border rounded-lg bg-white p-4">
+        <div class="flex items-center gap-3">
+          <img class="w-10 h-10 rounded-full" src="./assets/images/Admin-screen-ReviewModeration/Rectangle 159.png" alt="">
+          <div class="flex flex-col">
+            <p class="text-sm font-medium">User Name</p>
+            <p class="text-xs text-gray-500">email123@example.com</p>
+          </div>
+        </div>
+        <div class="flex justify-between text-sm text-gray-700">
+          <span class="font-semibold">Booking Date:</span>
+          <span>April 24, 2025</span>
+        </div>
+        <div class="flex justify-between text-sm text-gray-700">
+          <span class="font-semibold">Amount:</span>
+          <span>$250.00</span>
+        </div>
+        <div class="flex justify-between items-center text-sm font-semibold">
+          <span class="text-gray-700">Status:</span>
+          <span class="text-meal-border px-4 py-2 rounded-lg bg-[#ecfdf5]">Confirmed</span>
+        </div>
       </div>
-    </div>
 
-    <!-- Booking Date -->
-    <div class="flex justify-between w-full md:w-auto text-sm text-gray-700">
-      <span class="font-semibold md:hidden">Booking Date:</span>
-      <span class="3xl:text-lg">April 24, 2025</span>
-    </div>
-
-    <!-- Amount -->
-    <div class="flex justify-between w-full md:w-auto text-sm text-gray-700">
-      <span class="font-semibold md:hidden">Amount:</span>
-      <span class="3xl:text-lg">$250.00</span>
-    </div>
-
-    <!-- Status -->
-    <div class="flex justify-between items-center w-full md:w-auto text-sm font-semibold">
-      <span class="text-gray-700 md:hidden">Status:</span>
-      <span class="text-primary px-6 py-2 rounded-lg font-bold bg-[#fff8e7]">Pending</span>
-    </div>
-
-  </div>
-</li>
-
-    <li>
-  <div class="flex flex-col gap-4 border-b border-border rounded-lg  bg-white p-4 m-2 md:flex-row md:items-center md:justify-between md:gap-10 md:p-7 md:rounded-none md:shadow-none md:border-b">
-    
-    <!-- Customer Info -->
-    <div class="flex items-center gap-3 w-full md:w-auto">
-      <img class="w-10 h-10 rounded-full" src="./assets/images/Admin-screen-ReviewModeration/Rectangle 159.png" alt="">
-      <div class="flex flex-col">
-        <p class=" 3xl:text-lg text-sm font-medium">User Name</p>
-        <p class="text-xs text-gray-500">email123@example.com</p>
+			<div class="flex flex-col gap-4 border border-border rounded-lg bg-white p-4">
+        <div class="flex items-center gap-3">
+          <img class="w-10 h-10 rounded-full" src="./assets/images/Admin-screen-ReviewModeration/Rectangle 159.png" alt="">
+          <div class="flex flex-col">
+            <p class="text-sm font-medium">User Name</p>
+            <p class="text-xs text-gray-500">email123@example.com</p>
+          </div>
+        </div>
+        <div class="flex justify-between text-sm text-gray-700">
+          <span class="font-semibold">Booking Date:</span>
+          <span>April 24, 2025</span>
+        </div>
+        <div class="flex justify-between text-sm text-gray-700">
+          <span class="font-semibold">Amount:</span>
+          <span>$250.00</span>
+        </div>
+        <div class="flex justify-between items-center text-sm font-semibold">
+          <span class="text-gray-700">Status:</span>
+          <span class="text-meal-border px-4 py-2 rounded-lg bg-[#ecfdf5]">Confirmed</span>
+        </div>
       </div>
-    </div>
 
-    <!-- Booking Date -->
-    <div class="flex justify-between w-full md:w-auto text-sm text-gray-700">
-      <span class="font-semibold md:hidden">Booking Date:</span>
-      <span class="3xl:text-lg">April 24, 2025</span>
-    </div>
 
-    <!-- Amount -->
-    <div class="flex justify-between w-full md:w-auto text-sm text-gray-700">
-      <span class="font-semibold md:hidden">Amount:</span>
-      <span class="3xl:text-lg">$250.00</span>
-    </div>
-
-    <!-- Status -->
-    <div class="flex justify-between items-center w-full md:w-auto text-sm font-semibold">
-      <span class="text-gray-700 md:hidden">Status:</span>
-      <span class="text-meal-border font-semibold px-4 py-2 rounded-lg bg-[#ecfdf5]">Confirmed</span>
-    </div>
-
-  </div>
-</li>
-
-    </ul>
   </div>
 </div>
 
