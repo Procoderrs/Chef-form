@@ -384,11 +384,17 @@
   .w-44 {
     width: calc(var(--spacing) * 44);
   }
+  .w-\[0\%\] {
+    width: 0%;
+  }
   .w-\[30\%\] {
     width: 30%;
   }
   .w-\[40\%\] {
     width: 40%;
+  }
+  .w-\[50\%\] {
+    width: 50%;
   }
   .w-full {
     width: 100%;
