@@ -1165,6 +1165,11 @@
       width: 90%;
     }
   }
+  .sm\:grid-cols-7 {
+    @media (width >= 36rem) {
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+  }
   .md\:order-1 {
     @media (width >= 48rem) {
       order: 1;
