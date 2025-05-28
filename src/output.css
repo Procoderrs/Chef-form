@@ -306,11 +306,17 @@
       max-width: 103.75rem;
     }
   }
+  .my-24 {
+    margin-block: calc(var(--spacing) * 24);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
   .mb-14 {
     margin-bottom: calc(var(--spacing) * 14);
+  }
+  .mb-24 {
+    margin-bottom: calc(var(--spacing) * 24);
   }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
@@ -864,8 +870,17 @@
   .pb-14 {
     padding-bottom: calc(var(--spacing) * 14);
   }
+  .pb-16 {
+    padding-bottom: calc(var(--spacing) * 16);
+  }
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pb-24 {
+    padding-bottom: calc(var(--spacing) * 24);
+  }
+  .pb-28 {
+    padding-bottom: calc(var(--spacing) * 28);
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
