@@ -374,6 +374,27 @@
   .h-full {
     height: 100%;
   }
+  .min-h-\[300px\] {
+    min-height: 300px;
+  }
+  .min-h-\[330px\] {
+    min-height: 330px;
+  }
+  .min-h-\[340px\] {
+    min-height: 340px;
+  }
+  .min-h-\[350px\] {
+    min-height: 350px;
+  }
+  .min-h-\[360px\] {
+    min-height: 360px;
+  }
+  .min-h-\[370px\] {
+    min-height: 370px;
+  }
+  .min-h-\[400px\] {
+    min-height: 400px;
+  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
@@ -1716,6 +1737,11 @@
   .\33 xl\:py-18 {
     @media (width >= 103.75rem) {
       padding-block: calc(var(--spacing) * 18);
+    }
+  }
+  .\33 xl\:pt-14 {
+    @media (width >= 103.75rem) {
+      padding-top: calc(var(--spacing) * 14);
     }
   }
   .\33 xl\:pb-14 {
