@@ -493,6 +493,9 @@
   .justify-end {
     justify-content: flex-end;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
   .justify-items-start {
     justify-items: start;
   }
@@ -1594,6 +1597,11 @@
     @media (width >= 62rem) {
       font-size: var(--text-xs);
       line-height: var(--tw-leading, var(--text-xs--line-height));
+    }
+  }
+  .xl\:grid-cols-12 {
+    @media (width >= 75rem) {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
     }
   }
   .\32 xl\:h-3\.5 {
