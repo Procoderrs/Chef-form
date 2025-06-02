@@ -13,11 +13,6 @@
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-white: #fff;
     --spacing: 0.25rem;
-    --breakpoint-sm: 36rem;
-    --breakpoint-md: 48rem;
-    --breakpoint-lg: 62rem;
-    --breakpoint-xl: 75rem;
-    --breakpoint-2xl: 90rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
@@ -55,10 +50,6 @@
     --color-upload-photo-border: rgba(0, 0, 0, 0.3);
     --font-display: 'Lato','sans-serif';
     --font-signature: 'Stay Positive','cursive';
-    --breakpoint-small: 24.375;
-    --breakpoint-coxs: 23.4375rem;
-    --breakpoint-xs: 26.5625rem;
-    --breakpoint-3xl: 103.75rem;
   }
 }
 @layer base {
@@ -284,9 +275,6 @@
   }
   .container {
     width: 100%;
-    @media (width >= 24.375) {
-      max-width: 24.375;
-    }
     @media (width >= 23.4375rem) {
       max-width: 23.4375rem;
     }
@@ -939,11 +927,6 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
-  }
-  .small\:text-\[25px\] {
-    @media (width >= 24.375) {
-      font-size: 25px;
-    }
   }
   .sm\:block {
     @media (width >= 36rem) {
