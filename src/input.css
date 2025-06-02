@@ -16,6 +16,7 @@
   --font-display:'Lato','sans-serif';
 
   --font-signature:'Stay Positive','cursive';
+  --breakpoint-small: 22.5rem;     /* 360px */
   --breakpoint-coxs: 23.4375rem;        /* 375px */
   --breakpoint-xs: 26.5625rem;          /* 425px */
   --breakpoint-sm: 36rem;               /* 576px */
