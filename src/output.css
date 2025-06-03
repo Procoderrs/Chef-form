@@ -2000,6 +2000,11 @@
       font-size: 50px;
     }
   }
+  .\33 xl\:h-6 {
+    @media (width >= 103.75rem) {
+      height: calc(var(--spacing) * 6);
+    }
+  }
   .\33 xl\:h-7 {
     @media (width >= 103.75rem) {
       height: calc(var(--spacing) * 7);
