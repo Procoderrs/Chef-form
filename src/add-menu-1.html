@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Add Menu-1</title>
+</head>
+<body class="font-display">
+
+  <section class="bg-bg lg:p-18 p-3">
+    <h2 class="3xl:text-3xl text-[22px] md:text-xl pb-7 font-semibold">Base Servings Size & Price</h2>
+    <div class="lg:p-7 p-4 bg-white rounded-lg  shadow-md ">
+       <p class="text-para-context 3xl:text-lg lg:max-w-[950px] w-full text-sm pb-7">Add portion and price information for the smallest serving you want to offer. 
+        Next you can add options for larger portion sizes. 
+        We recommend setting 1 serving as the smallest portion for most dishes.</p>
+        <div class="flex flex-col md:flex-row items-center pb-12 gap-4 md:justify-between ">
+   <button class=" w-full bg-primary rounded-lg font-semibold 3xl:text-xl text-base text-white py-2">
+    Container
+   </button>
+   <button class="text-primary border rounded-lg font-semibold 3xl:text-xl text-base w-full py-2 border-primary">
+    Pieces
+   </button>
+   <button class="text-primary border rounded-lg font-semibold 3xl:text-xl text-base w-full py-2 border-primary">
+    Other
+   </button>
+        </div>
+
+       <div class="flex pb-12 items-start flex-col">
+  <h3 class="3xl:text-xl text-lg pb-1 font-bold">Base Portion Size</h3>
+  <p class="text-para-context md:text-base text-sm pb-5">Dishes that are portioned as number of ounces.</p>
+
+  <div class="flex items-center border border-border p-2 rounded-lg justify-between gap-2">
+    <!-- Left Button -->
+    <button class="rounded-l-lg  bg-primary px-2 py-3 ">
+      <img src="./assets/images/menu-1/Vector (7).svg" alt="">
+    </button>
+
+    <!-- Middle Text -->
+    <p class="px-12 font-medium text-xl ">02 oz</p>
+
+    <!-- Right Button -->
+    <button class="rounded-r-lg bg-primary p-2">
+      <img src="./assets/images/menu-1/Vector (8).svg" alt="">
+    </button>
+  </div>
+</div>
+<div class="">
+<h4 class="3xl:text-xl text-lg pb-1  font-bold">Base Number of Servings</h4>
+<p class="text-para-context text-sm md:text-base pb-5">This should be your smallest serving for this dish. You can add larger options on the next page.</p>
+</div>
+
+   <div class="relative rounded-lg border mb-5  border-border  ">
+  <select class="appearance-none w-full  3xl:text-lg text-sm  outline-none text-para-context py-2 px-3  rounded-lg">
+    <option>4 Servings</option>
+    <option>5 Servings</option>
+    <option>6 Servings</option>
+  </select>
+
+  <!-- Custom arrow image -->
+  <img src="./assets/images/menu-1/Vector (9).svg" 
+       class="pointer-events-none absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4" 
+       alt="Arrow" />
+</div>
+
+<button class="bg-custom-options text-center 3xl:text-lg text-sm  py-2  rounded-lg border  border-primary  w-full text-primary">
+Similar sized dishes are usually 1-2 servings.
+</button>
+
+
+<div class="grid md:grid-cols-[1.5fr_2fr] grid-cols-1 gap-y-12 pt-12 gap-x-7">
+  <div class=" left-grid p-5 border border-primary rounded-lg flex flex-col items-start">
+     <p class="3xl:text-xl pb-1 text-lg font-bold">Best price for this portion</p>
+     <p class="text-para-context 3xl:text-base pb-5 text-sm">We recommend setting a price that ends with either .49 or .99</p>
+    
+     <p class="flex items-start border text-lg text-para-context w-full px-3 border-border rounded-lg py-2">
+      $20
+     </p>
+
+    </div>
+
+    <div class=" right-grid p-5 border border-primary rounded-lg flex flex-col items-start">
+     <p class="text-xl pb-1  font-bold">Base number of containers</p>
+     <p class="text-para-context 3xl:text-base pb-5 text-sm">Enter the total number of containers used for this food item, at the base serving size. We use this to determine how many labels are printed when this food item is ordered.</p>
+    
+     <p class="flex items-start border text-lg text-para-context w-full px-3 border-border rounded-lg py-2">
+      $20
+     </p>
+
+    </div>
+
+</div>
+<div class="grid md:grid-cols-2 grid-cols-1  gap-y-6 pt-14   gap-x-7">
+
+  <div class="left-grid p-5 border order-2 md:order-0 rounded-lg   border-border">
+   <h5 class="3xl:text-xl text-lg font-bold pb-6">Tips</h5>
+   <ul class="list-disc 3xl:text-lg  text-xs pl-5 space-y-2 text-para-context">
+  <li>Single serving mains and 1 or 1–2 serving sides are our most popular dishes.</li>
+  <li>Your base serving price will be what customers see most often. Make sure it's priced as competitively as possible.</li>
+  <li>You can use the price recommendation provided as a guide; we’ve based it off of other top-selling dishes in your city.</li>
+  <li>Lower-priced dishes with a generous portion size typically sell best, especially for new dishes.</li>
+  <li>When dishes are priced too high, customers tend to opt for other items—setting higher prices does not mean that you’ll make more money.</li>
+  <li>If you do choose to set your prices above these recommendations, we recommend you make the value clear to your customer.</li>
+</ul>
+
+  </div>
+
+  <div class="right-grid p-5 3xl:text-lg order-1 md:order-0 text-sm rounded-lg border border-border">
+     <p class="3xl:text-xl text-lg font-bold pb-6">Price Breakdown</p>
+     <ul class="list-disc md:text-base text-xs pl-5 space-y-2 text-para-context">
+      <li>You earn $15.00 from each dish sold!</li>
+      <li>Shef collects 15% to cover marketing, customer support and software development</li>
+      <li>Separately, $2.00 goes towards operations and delivery costs. </li>
+     </ul>
+  </div>
+  <div>
+    
+  </div>
+</div>
+
+    </div>
+<div class="pt-16">
+
+
+   <div class="flex items-center bg-white  shadow-md  rounded-lg justify-center gap-4 md:gap-0 md:justify-between p-7">
+     <button class="flex items-center justify-center border 3xl:text-xl text-base  font-semibold border-secondary px-10 py-2 rounded-lg text-secondary">Back</button>
+          <button class="flex items-center bg-primary justify-center  3xl:text-xl text-base font-semibold px-10 py-2 rounded-lg text-white">Continue</button>
+
+   </div>
+</div>
+
+  </section>
+
+  
+
+
+
+  
+  
+  
+  
+</body>
+</html>
