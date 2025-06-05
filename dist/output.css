@@ -1872,6 +1872,11 @@
       gap: calc(var(--spacing) * 3);
     }
   }
+  .lg\:gap-5 {
+    @media (width >= 62rem) {
+      gap: calc(var(--spacing) * 5);
+    }
+  }
   .lg\:gap-10 {
     @media (width >= 62rem) {
       gap: calc(var(--spacing) * 10);
@@ -1884,6 +1889,11 @@
         margin-block-start: calc(calc(var(--spacing) * 0) * var(--tw-space-y-reverse));
         margin-block-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-y-reverse)));
       }
+    }
+  }
+  .lg\:gap-x-3 {
+    @media (width >= 62rem) {
+      column-gap: calc(var(--spacing) * 3);
     }
   }
   .lg\:gap-x-8 {
