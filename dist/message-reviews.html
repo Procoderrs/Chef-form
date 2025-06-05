@@ -19,7 +19,7 @@
     <h2 class="lg:hidden pb-5 font-semibold text-[22px]">All Messages</h2>
 <div class="grid xl:grid-cols-[1.5fr_2fr] grid-cols-1 items-stretch gap-x-10 gap-y-10 xl:gap-y-0">
 
-  <div class="left-grid flex flex-col gap-6 rounded-lg shadow-md bg-white lg:py-5 lg:px-5 p-2 ">
+  <div class="left-grid  relative flex flex-col gap-6 rounded-lg shadow-md bg-white lg:py-5 lg:px-5 p-2 ">
      <div class="px-3 py-3 rounded-lg text-sm lg:text-base border-border border">
       <input type="text" placeholder="Search...">
      </div>
@@ -107,7 +107,8 @@
            </div>
      </div>
 
-    <div class="p-3 flex    justify-between   ">
+    <div class="p-3 flex  relative    justify-between   ">
+      
            <div class="flex gap-2 lg:items-center items-start justify-center ">
              <div class="w-12 h-12 rounded-full  ">
               <img class="w-full h-full" src="./assets/images/message/Ellipse 2.svg" alt="person">
@@ -125,7 +126,7 @@
 
   </div>
 
-  <div class="right-grid rounded-lg  shadow-md bg-white">
+  <div class="right-grid rounded-lg   shadow-md bg-white">
 <div class=" px-3 py-3">
   <div class="md:px-4 px-1  py-2 border-b border-border flex items-center justify-between">
   <div class="flex items-center md:gap-3 gap-1">
@@ -199,7 +200,7 @@
   <p class="text-para-context lg:text-base 3xl:text-base text-xs md:text-sm">5:36pm</p>
 </div>
   </div>
-<div class="flex lg:gap-3 gap-2  ">
+<div class="flex lg:gap-3 gap-2   ">
 <div class="rounded-full  w-12 h-12">
   <img class="w-full h-full" src="./assets/images/message/Ellipse 2.svg" alt="User-img">
 </div>
@@ -209,7 +210,7 @@
 </div>
   </div>
 
-  <div class="flex items-center sticky gap-3 justify-between">
+  <div class="flex items-center  gap-3 justify-between">
     <div class="rounded-full bg-primary p-2">
       <img class="w-full h-full" src="./assets/images/message/+.svg" alt="add-icon">
     </div>
@@ -253,8 +254,8 @@
   <div class=" border  z-10 absolute  -top-12 border-primary rounded-full ">
     <img src="./assets/images/message/image.svg" alt="">
   </div>
-  <div class="absolute top-3 right-3">
-    <img src="./assets/images/message/fluent-mdl2_pinned.svg" alt="">
+  <div  class="absolute top-3 right-3">
+    <img class="w-5 h-5 md:h-7 md:w-7" src="./assets/images/message/fluent-mdl2_pinned.svg" alt="">
   </div>
     <div class="pt-10  flex items-center justify-center  flex-col">
       <p class="pb-1 text-secondary text-xl font-semibold ">John Davis</p>
@@ -274,12 +275,12 @@
         </div>
     </div>
       </div>
-      <div class="1st-card  rounded-lg shadow-md flex flex-col items-center justify-center p-4 relative bg-white">
+      <div class="1st-card  rounded-lg shadow-md hidden md:flex flex-col items-center justify-center p-4 relative bg-white">
   <div class=" border  z-10 absolute  -top-12 border-primary rounded-full ">
     <img src="./assets/images/message/image.svg" alt="">
   </div>
   <div class="absolute top-3 right-3">
-    <img src="./assets/images/message/fluent-mdl2_pinned.svg" alt="">
+    <img class="w-7 h-7" src="./assets/images/message/fluent-mdl2_pinned.svg" alt="">
   </div>
     <div class="pt-10  flex items-center justify-center  flex-col">
       <p class="pb-1 text-secondary text-xl font-semibold ">John Davis</p>
@@ -370,7 +371,7 @@
     <img src="./assets/images/message/image.svg" alt="">
   </div>
   <div class="absolute top-3 right-3">
-    <img src="./assets/images/message/Vector (6).svg" alt="">
+    <img class="w-5 h-5 md:w-7 md:h-7" src="./assets/images/message/Vector (6).svg" alt="">
   </div>
     <div class="pt-16  flex items-center justify-center  flex-col">
       <p class="pb-1 text-secondary text-xl font-semibold ">John Davis</p>

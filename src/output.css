@@ -285,6 +285,9 @@
   .z-10 {
     z-index: 10;
   }
+  .z-50 {
+    z-index: 50;
+  }
   .order-1 {
     order: 1;
   }
@@ -1274,6 +1277,11 @@
   .md\:h-6 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:h-7 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 7);
     }
   }
   .md\:h-14 {
