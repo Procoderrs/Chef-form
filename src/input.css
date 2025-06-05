@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 @theme{
   --color-primary:#ffa12e;
   --color-border:rgba(135, 135, 135, 0.2);
@@ -11,7 +10,7 @@
   --color-meal-border:#059669;
   --color-custom-options:#fff8e7;
   --color-upload-photo-border:rgba(0, 0, 0, 0.3);
-  --color-p-bank-name:#383838
+  --color-p-bank-name:#383838;
 
 
   --font-display:'Lato','sans-serif';
