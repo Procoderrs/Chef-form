@@ -17,6 +17,7 @@
     --color-purple-500: oklch(62.7% 0.265 303.9);
     --color-pink-100: oklch(94.8% 0.028 342.258);
     --color-pink-200: oklch(89.9% 0.061 343.231);
+    --color-pink-400: oklch(71.8% 0.202 349.761);
     --color-pink-500: oklch(65.6% 0.241 354.308);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
@@ -654,8 +655,23 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+  }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
+  }
+  .gap-36 {
+    gap: calc(var(--spacing) * 36);
+  }
+  .gap-38 {
+    gap: calc(var(--spacing) * 38);
+  }
+  .gap-48 {
+    gap: calc(var(--spacing) * 48);
+  }
+  .gap-52 {
+    gap: calc(var(--spacing) * 52);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -814,6 +830,12 @@
   }
   .bg-meal-options {
     background-color: var(--color-meal-options);
+  }
+  .bg-pink-200 {
+    background-color: var(--color-pink-200);
+  }
+  .bg-pink-400 {
+    background-color: var(--color-pink-400);
   }
   .bg-primary {
     background-color: var(--color-primary);
@@ -1198,6 +1220,11 @@
   .sm\:w-\[90\%\] {
     @media (width >= 36rem) {
       width: 90%;
+    }
+  }
+  .sm\:w-auto {
+    @media (width >= 36rem) {
+      width: auto;
     }
   }
   .sm\:flex-row {
@@ -2092,6 +2119,11 @@
   .lg\:pt-0 {
     @media (width >= 62rem) {
       padding-top: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:pt-4 {
+    @media (width >= 62rem) {
+      padding-top: calc(var(--spacing) * 4);
     }
   }
   .lg\:pt-16 {
