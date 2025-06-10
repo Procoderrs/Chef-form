@@ -7,25 +7,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-yellow-500: oklch(79.5% 0.184 86.047);
-    --color-green-100: oklch(96.2% 0.044 156.743);
-    --color-green-400: oklch(79.2% 0.209 151.711);
-    --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-green-600: oklch(62.7% 0.194 149.214);
-    --color-blue-500: oklch(62.3% 0.214 259.815);
-    --color-purple-500: oklch(62.7% 0.265 303.9);
-    --color-pink-100: oklch(94.8% 0.028 342.258);
     --color-pink-200: oklch(89.9% 0.061 343.231);
     --color-pink-400: oklch(71.8% 0.202 349.761);
-    --color-pink-500: oklch(65.6% 0.241 354.308);
     --color-gray-200: oklch(92.8% 0.006 264.531);
-    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-700: oklch(37.3% 0.034 259.733);
-    --color-gray-900: oklch(21% 0.034 264.665);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-lg: 32rem;
@@ -53,15 +40,11 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --tracking-normal: 0em;
     --tracking-wide: 0.025em;
-    --leading-relaxed: 1.625;
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-primary: #ffa12e;
@@ -353,9 +336,6 @@
       max-width: 103.75rem;
     }
   }
-  .mt-4 {
-    margin-top: calc(var(--spacing) * 4);
-  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
@@ -364,9 +344,6 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
-  }
-  .mb-12 {
-    margin-bottom: calc(var(--spacing) * 12);
   }
   .mb-14 {
     margin-bottom: calc(var(--spacing) * 14);
@@ -388,9 +365,6 @@
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .h-2 {
     height: calc(var(--spacing) * 2);
@@ -545,10 +519,6 @@
   .border-collapse {
     border-collapse: collapse;
   }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -558,9 +528,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .resize-none {
     resize: none;
@@ -649,29 +616,11 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
-  .gap-11 {
-    gap: calc(var(--spacing) * 11);
-  }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
-  .gap-16 {
-    gap: calc(var(--spacing) * 16);
-  }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
-  }
-  .gap-36 {
-    gap: calc(var(--spacing) * 36);
-  }
-  .gap-38 {
-    gap: calc(var(--spacing) * 38);
-  }
-  .gap-48 {
-    gap: calc(var(--spacing) * 48);
-  }
-  .gap-52 {
-    gap: calc(var(--spacing) * 52);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -695,9 +644,6 @@
   }
   .gap-x-12 {
     column-gap: calc(var(--spacing) * 12);
-  }
-  .gap-y-5 {
-    row-gap: calc(var(--spacing) * 5);
   }
   .gap-y-6 {
     row-gap: calc(var(--spacing) * 6);
@@ -831,12 +777,6 @@
   .bg-meal-options {
     background-color: var(--color-meal-options);
   }
-  .bg-pink-200 {
-    background-color: var(--color-pink-200);
-  }
-  .bg-pink-400 {
-    background-color: var(--color-pink-400);
-  }
   .bg-primary {
     background-color: var(--color-primary);
   }
@@ -875,9 +815,6 @@
   }
   .p-7 {
     padding: calc(var(--spacing) * 7);
-  }
-  .p-14 {
-    padding: calc(var(--spacing) * 14);
   }
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
@@ -1183,9 +1120,6 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-30 {
     opacity: 30%;
   }
@@ -1198,10 +1132,6 @@
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .outline-none {
     --tw-outline-style: none;
@@ -1245,11 +1175,6 @@
   .sm\:px-2 {
     @media (width >= 36rem) {
       padding-inline: calc(var(--spacing) * 2);
-    }
-  }
-  .sm\:py-4 {
-    @media (width >= 36rem) {
-      padding-block: calc(var(--spacing) * 4);
     }
   }
   .md\:top-1 {
@@ -1807,11 +1732,6 @@
       left: calc(var(--spacing) * 6);
     }
   }
-  .lg\:mt-0 {
-    @media (width >= 62rem) {
-      margin-top: calc(var(--spacing) * 0);
-    }
-  }
   .lg\:block {
     @media (width >= 62rem) {
       display: block;
@@ -1982,16 +1902,6 @@
       align-items: flex-start;
     }
   }
-  .lg\:justify-between {
-    @media (width >= 62rem) {
-      justify-content: space-between;
-    }
-  }
-  .lg\:justify-center {
-    @media (width >= 62rem) {
-      justify-content: center;
-    }
-  }
   .lg\:gap-3 {
     @media (width >= 62rem) {
       gap: calc(var(--spacing) * 3);
@@ -2149,11 +2059,6 @@
   .lg\:pb-0 {
     @media (width >= 62rem) {
       padding-bottom: calc(var(--spacing) * 0);
-    }
-  }
-  .lg\:pb-5 {
-    @media (width >= 62rem) {
-      padding-bottom: calc(var(--spacing) * 5);
     }
   }
   .lg\:pb-7 {
@@ -2562,11 +2467,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -2596,7 +2496,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
     }
   }
 }
